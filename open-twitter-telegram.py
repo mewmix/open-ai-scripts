@@ -66,7 +66,7 @@ def tweet():
     title = result[user_int]['title']
     url = result[user_int]['link']
 
-    answer = chat.interact(f"Generate a short summary tweet about the most recent news stories I will be sending you. Here is the first one. Generate a hashtag for the article. Always include the hashtag #thechronn & #breaking - {title} {url} ")
+    answer = chat.interact(f"Generate a short summary tweet about the most recent news stories I will be sending you. Here is the first one. Generate a hashtag for the article. Always include the hashtag #(yourhashtag) & #breaking - {title} {url} ")
 
     print(answer)
 
